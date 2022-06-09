@@ -38,7 +38,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -46,6 +54,27 @@ body {
   color: #242424;
   font-style: normal;
 
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+
+.navigation-user {
+  width: 280px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -64,12 +93,30 @@ body {
   background-color: #ffffff;
 }
 
-.advantages-image{
-  background-image: url("../images/index-background.jpg");
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-index {
+  background: url('../images/index-background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
   height: 485px;
+  color: #ffffff;
   text-align: center;
+}
+
+.page-hero, {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-header {
@@ -77,12 +124,26 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-header-advantages, .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.page-advantages {
+
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item-opro {
@@ -206,6 +267,8 @@ body {
   height: 403px;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .header-catalog a {
@@ -306,4 +369,38 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 14px 20px;
+}
+
+.filter {
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
+}
+
+.location-container {
+  display: flex;
+  width: 365px;
+  margin: 0;
+  padding: 0;
+}
+
+.container-catalog {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.filter-right {
+  width: 518px;
+}
+
+.footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-contacts{
+  width: 142px;
+
 }
