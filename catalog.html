@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="images/logo.jpg" alt="Логотип сайта" width="139" height="70">
+        <img src="images/logo.jpg" alt="Логотип сайта" class="navigation-logo" width="139" height="70">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="about.html" >Главная</a>
@@ -131,6 +131,8 @@
 
       </div>
       <div class="container-catalog">
+        <div class="">
+        <span class="amount-hostel">Найдено гостиниц: 38</span>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -146,6 +148,8 @@
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
+      <div class="catalog-calumn">
         <ul class="product-list">
           <li class="product-card">
           <a class="product-card-link" href="product.html">
@@ -196,7 +200,8 @@
     <span class="product-rating">Рейтинг: 5,0</span>
   </li>
     </ul>
-
+  </div>
+  <div class="index-pagination">
     <ul class="pagination">
 
 <li class="pagination-item pagination-current-item">
@@ -218,13 +223,15 @@
   <a class="pagination-link" href="#">10</a>
 </li>
 </ul>
-
+<div class="index-number">
 <p class="number-hotel">Гостиниц на странице:</p>
 <select class="select-pagination" aria-label="Сортировка">
   <option value="popular">4</option>
   <option value="cheap">8</option>
   <option value="expensive">12</option>
 </select>
+</div>
+</div>
 </div>
       </section>
       <section class="Subscribe">
