@@ -43,10 +43,12 @@
         </ul>
       </nav>
     </header>
-    <div class="page-container">
-    <div class="header-catalog">
     <main class="main-inner">
+      <div class="page-container">
+      <div class="header-catalog">
+      <div class="header-catalog-container">
       <div class="header-container">
+
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -54,7 +56,7 @@
             <a class="breadcrumbs-link" href="index.html"><p class="visually-hidden">Главная</p>
             <img src="images/home2.svg" width="12px" height="12px" alt=""> </a>
           </li>
-          <li>
+          <li class="breadcrumbs-item">
             <img src="images/arrow.svg" width="5" height="8">
           </li>
           <li class="breadcrumbs-item">
@@ -68,20 +70,19 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="filter">
             <div class="location-container">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
+          <fieldset class="catalog-filter-group catalog-filter-group-left">
+
+            <legend class="catalog-filter-title catalog-filter-left">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="Swimming-pool" checked>
-
               Бассейн
             </label>
           </li>
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="parking" checked>
-
             Парковка
           </label>
         </li>
@@ -95,8 +96,8 @@
         </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип Жилья</legend>
+          <fieldset class="catalog-filter-group catalog-filter-group-right">
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -128,7 +129,7 @@
         </div>
         </div>
         </form>
-
+      </div>
       </div>
       <div class="container-catalog">
         <div class="">
